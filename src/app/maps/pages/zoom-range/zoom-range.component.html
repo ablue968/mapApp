@@ -1,0 +1,20 @@
+<div #map class="map-zoom-container"></div>
+
+<mat-card>
+    <mat-card-title>Zoom</mat-card-title>
+    <mat-card-subtitle>Lng, Lat: </mat-card-subtitle>
+    <mat-card-content>
+        [ 12 , 13 ]
+    </mat-card-content> 
+    <mat-divider></mat-divider>
+    <mat-card-actions>
+        <mat-slider ></mat-slider>
+        <button mat-raised-button >
+            <mat-icon (click)="zoom('+')" aria-hidden="false" aria-label="Zoom-in icon">zoom_in</mat-icon>
+        </button>
+        <br>
+        <button mat-raised-button>
+            <mat-icon  (click)="zoom('-')" aria-hidden="false" aria-label="Zoom-out icon">zoom_out</mat-icon>
+        </button>
+    </mat-card-actions>
+</mat-card>
