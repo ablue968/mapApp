@@ -1,1 +1,30 @@
-<p>markers works!</p>
+<section class="marker-menu">
+    <button mat-raised-button (click)="addMarker()">
+        <mat-icon  mat-list-icon>add_circle</mat-icon> New Marker
+    </button>
+    
+</section>
+<section class="marker-list">
+    <mat-list *ngFor="let marker of markerArr, let i = index">
+        <mat-list-item (click)="goToMarker( marker.point! )">
+            <div mat-line> {{i + 1}} </div>
+            <button class="marker-delete" mat-raised-button (click)="deleteMarker(i)">x</button>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+    </mat-list>
+</section>
+
+
+
+
+<!-- <section >
+    <button mat-button [matMenuTriggerFor]="menu">Marker List</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+</section> -->
+
+<div #map class="map-marker-container"></div>
+
+

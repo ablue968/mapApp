@@ -1,20 +1,20 @@
 <div #map class="map-zoom-container"></div>
 
 <mat-card>
-    <mat-card-title>Zoom</mat-card-title>
+    <mat-card-title>Zoom: {{ zoomLvl | number:'1.0-0' }}</mat-card-title>
     <mat-card-subtitle>Lng, Lat: </mat-card-subtitle>
     <mat-card-content>
-        [ 12 , 13 ]
+        [ {{ center[0] | number: '2.3-3'}} , {{ center[1] | number: '2.3-3'}} ]
     </mat-card-content> 
-    <mat-divider></mat-divider>
+    <mat-divider ></mat-divider>
     <mat-card-actions>
-        <mat-slider ></mat-slider>
-        <button mat-raised-button >
-            <mat-icon (click)="zoom('+')" aria-hidden="false" aria-label="Zoom-in icon">zoom_in</mat-icon>
+        <mat-slider min="1" max="20" step="0.5" step="0.5" [value]="zoomLvl" (input)="zoomScope( zoomInput.value )" #zoomInput></mat-slider>
+        <button mat-raised-button (click)="zoom('+')">
+            <mat-icon  aria-hidden="false" aria-label="Zoom-in icon">zoom_in</mat-icon>
         </button>
         <br>
-        <button mat-raised-button>
-            <mat-icon  (click)="zoom('-')" aria-hidden="false" aria-label="Zoom-out icon">zoom_out</mat-icon>
+        <button mat-raised-button (click)="zoom('-')">
+            <mat-icon   aria-hidden="false" aria-label="Zoom-out icon">zoom_out</mat-icon>
         </button>
     </mat-card-actions>
 </mat-card>

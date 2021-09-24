@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
-import { menuItem } from 'src/app/shared/menu/menuItem';
+import { menuItem } from 'src/app/shared/menu/menuItem.interface';
 
 @Component({
   selector: 'app-menu',

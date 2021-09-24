@@ -1,0 +1,43 @@
+
+.prop-container{
+    margin:0.5rem;
+    margin-left: 2rem;    
+}
+
+.prop-title{
+    padding-left: 2rem;
+    font-weight: 500;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.prop-card {
+    margin: 2.5rem;
+    width: 15rem;
+}
+
+.mat-card-header{
+    height: 80px;
+}
+
+.mat-card-title{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.card-actions{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+p{
+    height: 20px;
+}

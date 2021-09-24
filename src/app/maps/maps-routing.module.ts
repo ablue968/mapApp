@@ -4,6 +4,7 @@ import { FullScreenComponent } from './pages/full-screen/full-screen.component';
 import { MarkersComponent } from './pages/markers/markers.component';
 import { PropertiesComponent } from './pages/properties/properties.component';
 import { ZoomRangeComponent } from './pages/zoom-range/zoom-range.component';
+import { MarkerService } from './pages/markers/marker.service';
 
 const routes: Routes = [
   {path: '', children: [

@@ -1,1 +1,24 @@
-<p>properties works!</p>
+<main class="prop-container">
+    <section>
+        <h1 class="prop-title">Properties</h1>
+        <mat-divider></mat-divider>
+    </section>
+    <section  class="card-container">
+        <mat-card class="prop-card" *ngFor="let file of properties">
+            <mat-card-header>
+              <mat-card-title>{{ file.title }}</mat-card-title>
+              <mat-card-subtitle>{{ file.lngLat[0] | number: '2.3-3'}} , {{ file.lngLat[0] | number: '2.3-3'}}</mat-card-subtitle>
+            </mat-card-header>
+            <app-mini-map [lngLat]='file.lngLat'></app-mini-map>
+            <mat-card-content>
+                <p>{{ file.description }}</p>
+              </mat-card-content>
+            <mat-card-actions class="card-actions">
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
+            </mat-card-actions>
+          </mat-card>
+    </section>
+
+</main>
+

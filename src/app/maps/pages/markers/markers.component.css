@@ -1,0 +1,30 @@
+.map-marker-container{
+    height: 100%;
+    width: 100%;
+}
+
+.marker-menu{
+    z-index: 99;
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    background-color: white;
+    border-radius: 5px;
+    width: 134px;
+
+}
+
+.marker-list{
+    z-index: 99;
+    position: fixed;
+    width: 134px;
+    top: 140px;
+    right: 50px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+.marker-delete{
+    min-width: unset !important;
+}

@@ -13,6 +13,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatIconModule} from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import {MatListModule} from '@angular/material/list';
 
 
 
@@ -31,7 +32,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatDividerModule,
     MatSliderModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatListModule,
   ]
 })
 export class MapsModule { }
